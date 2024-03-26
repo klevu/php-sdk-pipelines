@@ -1,0 +1,62 @@
+{
+    "name": "klevu/php-sdk-pipelines",
+    "description": "Klevu SDK integration with pipelines library",
+    "type": "library",
+    "version": "0.1.0",
+    "require": {
+        "php": "~8.1|~8.2",
+        "klevu/php-sdk": "0.1.0",
+        "klevu/php-pipelines": "0.1.0",
+        "psr/container": "*",
+        "php-http/discovery": "~1.15",
+        "guzzlehttp/guzzle": "^7.8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "captainhook/captainhook": "^5.10",
+        "captainhook/plugin-composer": "^5.3",
+        "mrm-commerce/phpcs-security-audit": "^3.0",
+        "phpcompatibility/php-compatibility": "^9.3",
+        "phpstan/phpstan": "^1.10",
+        "psr/log": "*",
+        "slevomat/coding-standard": "~8.0",
+        "symfony/yaml": "^5.0|^6.0"
+    },
+    "suggest": {
+        "monolog/monolog": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Klevu\\PhpSDKPipelines\\": "src/",
+            "Klevu\\PhpSDKPipelines\\Example\\": "examples/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Klevu\\PhpSDKPipelines\\Test\\": "tests/"
+        }
+    },
+    "keywords": ["klevu", "sdk", "pipelines", "data conversion"],
+    "license": ["MIT"],
+    "authors": [
+        {
+            "name": "Klevu Oy",
+            "email": "contact@klevu.com",
+            "homepage": "https://www.klevu.com"
+        }
+    ],
+    "support": {
+        "forum": "https://community.klevu.com",
+        "issues": "https://github.com/klevu/php-pipelines/issues"
+    },
+    "config": {
+        "allow-plugins": {
+            "captainhook/plugin-composer": true,
+            "php-http/discovery": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "extra": {
+        "captainhook-config": "captainhook.json"
+    }
+}
