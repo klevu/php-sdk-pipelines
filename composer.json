@@ -2,11 +2,11 @@
     "name": "klevu/php-sdk-pipelines",
     "description": "Klevu SDK integration with pipelines library",
     "type": "library",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "require": {
         "php": "~8.1|~8.2",
-        "klevu/php-sdk": "0.2.0",
-        "klevu/php-pipelines": "0.2.0",
+        "klevu/php-sdk": "0.3.0",
+        "klevu/php-pipelines": "0.3.0",
         "psr/container": "*",
         "php-http/discovery": "~1.15"
     },
